@@ -7,6 +7,11 @@ import { Juice } from "./Juice";
 import { Piano } from "./Piano";
 import { Pizza } from "./Pizza";
 import { shark } from "./Shark";
+import { Appliance } from './Appliance';
+import { Refrigerator } from "./Appliance";
+
+
+
 
 console.log("########################### Fish ################################")
 const dog1 = new shark("ฉลาม");
@@ -34,3 +39,41 @@ console.log("########################### Food ################################")
 const Pizza1 = new Pizza("ฮาวาเอี้ยน")
 Pizza1.addPizza()
 Pizza1.serveFood()
+
+console.log("########################### Appliance ################################")
+const ref1 = new Refrigerator()
+ref1.turnOn()
+ref1.turnOff()
+console.log("###########################################################")
+
+
+import { WashingMachine } from "./Appliance";
+const wash1 = new WashingMachine()
+wash1.turnOn()
+wash1.turnOff()
+console.log("###########################################################")
+
+import { Microwave } from "./Appliance";
+const micro1 = new Microwave ()
+micro1.turnOn()
+micro1.turnOff()
+
+
+
+console.log("########################### Notification ################################")
+import { EmailNotification } from "./Notification";
+
+const email1 = new EmailNotification ("664259010@gmail.com")
+email1.send("")
+console.log(email1)
+
+import { SMSNotification } from "./Notification";
+const sms1 = new SMSNotification (+822345774)
+sms1.send("")
+console.log(sms1)
+
+import { PushNotification } from "./Notification";
+const push1 = new PushNotification ()
+console.log(push1)
+push1.send("Line : SatuNaja 99")
+console.log("###################")
